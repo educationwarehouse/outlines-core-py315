@@ -24,22 +24,22 @@ jobs:
             arch: x86_64
             target: x86_64-unknown-linux-gnu
             manylinux: auto
-            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t"
+            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t 3.15"
           - runner: ubuntu-22.04
             arch: aarch64
             target: aarch64-unknown-linux-gnu
             manylinux: manylinux_2_28
-            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t"
+            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t 3.15"
           - runner: ubuntu-22.04
             arch: riscv64
             target: riscv64gc-unknown-linux-gnu
             manylinux: manylinux_2_39
-            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t"
+            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t 3.15"
           - runner: ubuntu-22.04
             arch: s390x
             target: s390x-unknown-linux-gnu
             manylinux: manylinux_2_28
-            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t"
+            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t 3.15"
 
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
@@ -113,11 +113,11 @@ jobs:
           - runner: windows-latest
             target: x86
             alias-target: i686-pc-windows-msvc
-            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t"
+            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t 3.15"
           - runner: windows-latest
             target: x64
             alias-target: x86_64-pc-windows-msvc
-            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t"
+            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t 3.15"
 
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
@@ -177,19 +177,19 @@ jobs:
           - runner: macos-14
             target: x86_64
             macos_version: "14.0"
-            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t"
+            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t 3.15"
           - runner: macos-14
             target: aarch64
             macos_version: "14.0"
-            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t"
+            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t 3.15"
           - runner: macos-15
             target: x86_64
             macos_version: "15.0"
-            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t"
+            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t 3.15"
           - runner: macos-15
             target: aarch64
             macos_version: "15.0"
-            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t"
+            interpreter: "3.9 3.10 3.11 3.12 3.13 3.14 3.14t 3.15"
 
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
